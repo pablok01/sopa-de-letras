@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="sopa_de_lletras" version="0.1.3">
+ <settings>
+  <title>sopa de lletras</title>
+  <revision description="created" date="10/21/20" />
+  <author name="vfvwvww" />
+  <description>
+   <p>esta difciil</p>
+  </description>
+  <descriptors area-codes="div" level-codes="PRI" />
+  <skin file="@blue.xml" />
+  <cover file="une_39986-resized.jpg" />
+  <thumb file="descarga.jpg" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>esta difciil</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="DESARROLLO" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="DESARROLLO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00FF33" />
+     </style>
+     <p>Encuentra todas las palabras</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>CASI LO LOGRAS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false" />
+    <container bgColor="0xC0C0C0">
+     <image name="descarga.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="15" columns="16" cellWidth="40.0" cellHeight="40.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>PEDRO*********P</row>
+     <row>DEF******B****A</row>
+     <row>GHI*******A***B</row>
+     <row>***********T**L</row>
+     <row>********E***O*O</row>
+     <row>*******T*******</row>
+     <row>******N********</row>
+     <row>*****E*********</row>
+     <row>****GO*****E***</row>
+     <row>****C******F***</row>
+     <row>***O*******E***</row>
+     <row>**L********J***</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">LOCO</clue>
+    <clue id="1">BATO</clue>
+    <clue id="2">PEDRO</clue>
+    <clue id="3">PABLO</clue>
+    <clue id="4">GENTE</clue>
+    <clue id="5">JEFE</clue>
+   </clues>
+   <cells rows="7" cols="1" cellWidth="100.0" cellHeight="50.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell border="true">
+     <style>
+      <font family="Arial" size="20" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>LOCO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>bato</p>
+    </cell>
+    <cell>
+     <p>pedro</p>
+    </cell>
+    <cell>
+     <p>pablo</p>
+    </cell>
+    <cell>
+     <p>gente</p>
+    </cell>
+    <cell>
+     <p>jefe</p>
+    </cell>
+    <cell />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="descarga.jpg" file="descarga.jpg" />
+  <media name="une_39986-resized.jpg" file="une_39986-resized.jpg" />
+ </mediaBag>
+</JClicProject>
+
